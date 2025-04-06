@@ -1,1 +1,3 @@
-Webhook = ""
+Webhooks = {
+	url = "https://discord.com/api/webhooks/11111111111111111111/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+}

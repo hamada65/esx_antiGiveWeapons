@@ -1,13 +1,31 @@
+if Config.FrameWork.old then
+    ESX = nil
+    Citizen.CreateThread(function()
+        while ESX == nil do
+            TriggerEvent(Config.FrameWork.sharedObject, function(obj) ESX = obj end)
+            Wait(0)
+        end
+    end)
+else
+    ESX = exports["es_extended"]:getSharedObject()
+end
+
 local knownWeapons = {}
 local esxWeapons = {}
 
 Citizen.CreateThread(function()
+    while not ESX do
+        Wait(100)
+    end
     for _, weapon in ipairs(ESX.GetConfig().Weapons) do
         esxWeapons[weapon.name] = GetHashKey(weapon.name)
     end
 end)
 
 Citizen.CreateThread(function()
+    while not ESX then
+        Wait(100)
+    end
 	Wait(5000)
     while true do
 
@@ -27,7 +45,7 @@ Citizen.CreateThread(function()
         end
 
         if next(newWeapons) then
-            TriggerServerEvent("Hamada:ESX:CheckValidWeapons", newWeapons)
+            TriggerServerEvent("Zahya:ESX:CheckValidWeapons", newWeapons)
         end
         Wait(Config.checkInterval * 1000)
     end
