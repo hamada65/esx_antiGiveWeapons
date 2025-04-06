@@ -1,0 +1,2 @@
+# esx_antiGiveWeapons
+esx_antiGiveWeapons
