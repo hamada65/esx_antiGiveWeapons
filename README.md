@@ -3,7 +3,7 @@
 **🔫 Anti-Weapon Spawn System for ESX Framework | By Zahya Dev**  
 Detects and blocks illegitimate client-side weapon spawns using secure server-side checks with webhook logging and optional ban/kick functionality.
 
-> ⚠️ Inspired by: [Saq69/Saq-AntiWeapons](https://github.com/Saq69/Saq-AntiWeapons/blob/main/server.lua)
+> ⚠️ Inspired by: [Saq69/Saq-AntiWeapons](https://github.com/Saq69/Saq-AntiWeapons/tree/main)
 
 ---
 
@@ -104,6 +104,6 @@ You must give credit if used publicly.
 
 ### 🙏 Credits
 
-- 💡 **Inspired by:** [Saq-AntiWeapons](https://github.com/Saq69/Saq-AntiWeapons/blob/main/server.lua)
+- 💡 **Inspired by:** [Saq-AntiWeapons](https://github.com/Saq69/Saq-AntiWeapons/tree/main)
 - 🛠️ **Developer:** Zahya Dev  
   📌 Discord: [Zahya Dev Community](https://discord.gg/mp6krbdyAN)
