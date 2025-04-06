@@ -6,6 +6,8 @@ version '1.0.0'
 
 lua54 'yes'
 
+repository 'https://github.com/hamada65/esx_antiGiveWeapons/'
+
 games {
   "gta5",
 }
